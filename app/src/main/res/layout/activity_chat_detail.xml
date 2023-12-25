@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FindFriends"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="38sp"
+            android:layout_height="38sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/back_ofchatdetail"
+            android:src="@drawable/love_chat" />
+
+        <ImageView
+            android:id="@+id/back_ofchatdetail"
+            android:layout_width="38sp"
+            android:layout_height="38sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:tint="@color/white"
+            android:src="@drawable/leftarrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/channelName"
+            android:layout_below="@+id/back_ofchatdetail"
+            android:text="Channel Name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/text_gradient"
+            android:textColor="@android:color/white"/>
+        <View
+            android:id="@+id/lineAbovePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_above="@+id/player_view"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bottom_line">
+        </View>
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:resize_mode="fit"
+            app:hide_on_touch="true"
+            app:show_timeout="5000"
+            app:use_controller="true"
+            android:background="@color/colorPrimaryDark"
+            app:player_layout_id="@layout/exo_simple_player_view"
+            app:controller_layout_id="@layout/custom_controller"
+            android:layout_below="@+id/channelName" />
+        <ProgressBar
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/progress_bar"
+            android:layout_centerInParent="true"/>
+
+
+        <View
+            android:id="@+id/lineBelowPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/player_view"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bottom_line">
+        </View>
+
+    </RelativeLayout>
+</layout>

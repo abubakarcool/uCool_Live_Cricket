@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="3dp"
+    android:orientation="horizontal"
+    android:background="@drawable/gradient_border_gradient_bkgd">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:padding="3dp"
+        android:layout_marginVertical="3dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Team"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:paddingStart="10sp"
+            android:paddingEnd="0sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="P"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:paddingStart="10sp"
+            android:paddingEnd="0sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="W"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:paddingStart="10sp"
+            android:paddingEnd="0sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="L"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:paddingStart="10sp"
+            android:paddingEnd="0sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="pts"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

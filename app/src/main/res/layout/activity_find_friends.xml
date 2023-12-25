@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="result"
+            type="Boolean" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindFriends"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/FFbackArrow"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:tint="@color/white"
+        android:src="@drawable/leftarrow" />
+
+    <EditText
+        android:id="@+id/FFetSearchFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="10dp"
+        android:hint="Enter your Friend's Email here"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#808080"
+        android:textSize="19sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/FFview"
+        android:layout_below="@+id/FFetSearchFriends"
+        android:layout_marginHorizontal="42dp"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bottom_line">
+    </View>
+
+    <Button
+        android:id="@+id/FFSearchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FFview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/gradient_border_gradient_bkgd"
+        android:drawableTint="@color/white"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="19sp">
+    </Button>
+    <TextView
+        android:id="@+id/FFtvResultInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FFSearchBtn"
+        android:layout_marginTop="1dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="@{result ? View.INVISIBLE:View.VISIBLE}"
+        android:textAlignment="center">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FFtvResultInfo"
+        android:gravity="center"
+        android:id="@+id/FFlinearLayoutResult"
+        android:visibility="@{result ? View.VISIBLE:View.INVISIBLE}"
+        android:background="@drawable/gradient_border_gradient_bkgd"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="42dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="3dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/FFprofileImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/avatar"
+                android:background="@drawable/gradient_border_circle"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="2dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/FFtvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Neat Roots"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/FFtvMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="abc@abc.com"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/FFsendRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_margin="6dp"
+                android:textSize="19sp"
+                android:text="Send Friend Request"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_send_request">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

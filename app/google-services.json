@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "457056237990",
+    "firebase_url": "https://chat-de-pareja-default-rtdb.firebaseio.com",
+    "project_id": "chat-de-pareja",
+    "storage_bucket": "chat-de-pareja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457056237990:android:8f05ba426bc7abc71e3767",
+        "android_client_info": {
+          "package_name": "com.chat.de.pareja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457056237990-alu9sg3ur0das3dtogn56k1s7hj3unll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chat.de.pareja",
+            "certificate_hash": "2121f3a5d71803cf09c55d719495768f23052a03"
+          }
+        },
+        {
+          "client_id": "457056237990-jnsg6n0sbets312202ccldu38c087u0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chat.de.pareja",
+            "certificate_hash": "24991e5c8cf704fc102114671c4f7c402ec1adf3"
+          }
+        },
+        {
+          "client_id": "457056237990-kv3d1snv1skoh426ddi2n216rh298uht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6rGUpPIx5GqIblOIWzQYtSu4LnZ126Dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457056237990-kv3d1snv1skoh426ddi2n216rh298uht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

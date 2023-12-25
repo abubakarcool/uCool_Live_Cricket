@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_marginTop="-30dp"
+            android:layout_height="300dp"
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="-40dp"
+            android:gravity="center_horizontal"
+            android:text="Since this app is new, the payment system isn't Automated yet."
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+            android:text="Contact us on WhatsApp for username, password, or other queries."
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="50dp"
+            android:text="Open WhatsApp"
+            android:background="@drawable/gradient_border_white_bkgd"
+            app:cornerRadius="4dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#25D366"
+                android:drawableLeft="@drawable/whatsapp"
+                android:padding="15dp"
+                android:text="+92 3235239749"
+                android:textColor="#FFFF"
+                app:cornerRadius="4dp"
+                android:textAllCaps="false"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvAlreadyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="4dp"
+            android:text="Already have Credentials?"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginVertical="5dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
