@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:457056237990:android:8f05ba426bc7abc71e3767",
         "android_client_info": {
-          "package_name": "com.chat.de.pareja"
+          "package_name": "com.ucool.cricket"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "457056237990-alu9sg3ur0das3dtogn56k1s7hj3unll.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.chat.de.pareja",
+            "package_name": "com.ucool.cricket",
             "certificate_hash": "2121f3a5d71803cf09c55d719495768f23052a03"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "457056237990-jnsg6n0sbets312202ccldu38c087u0h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.chat.de.pareja",
+            "package_name": "com.ucool.cricket",
             "certificate_hash": "24991e5c8cf704fc102114671c4f7c402ec1adf3"
           }
         },
